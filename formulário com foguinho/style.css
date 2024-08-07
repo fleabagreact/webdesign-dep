@@ -1,0 +1,126 @@
+body {
+    font-family: Roboto, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 380px;
+}
+
+form {
+    background-color: #444444;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.form div {
+    margin-bottom: 12px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 4px;
+    color: #666;
+    font-size: 15px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form textarea {
+    width: 100%;
+    padding: 7px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, background-color 0.3s;
+    background-color: #000000;
+    font-size: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+.form input[type="text"]:hover,
+.form input[type="email"]:hover,
+.form input[type="password"]:hover,
+.form textarea:hover,
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form input[type="password"]:focus,
+.form textarea:focus {
+    border-color: #7f4caf;
+    background-color: #000000;
+}
+
+.form textarea {
+    resize: vertical;
+    height: 60px;
+}
+
+.form span {
+    display: block;
+    margin-top: 3px;
+    font-size: 11px;
+    color: #999;
+}
+
+.bolinha p,
+.caixinha p {
+    margin-bottom: 6px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.bolinha div,
+.caixinha div {
+    display: inline-block;
+    margin-bottom: 6px;
+    margin-right: 6px;
+    font-size: 15px;
+}
+
+.bolinha input[type="radio"],
+.caixinha input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.bolinha input[type="radio"] + label,
+.caixinha input[type="checkbox"] + label {
+    color: #ffffff;
+}
+
+.botao {
+    text-align: center;
+}
+
+.botao input[type="submit"] {
+    background-color: #7f4caf;
+    color: white;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.botao input[type="submit"]:hover {
+    background-color: #c89af3;
+}

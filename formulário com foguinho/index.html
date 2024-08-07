@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário &#128293;</h1>
+
+        <form>
+            <div class="form">
+                <div>
+                    <label for="nome"></label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                    <span>Nome deve ter no mínimo 3 caracteres</span>
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu melhor email">
+                    <span>Digite um email válido</span>
+                </div>
+                <div>
+                    <label for="senha"></label>
+                    <input type="password" id="senha" name="senha" placeholder="Senha">
+                    <span>Digite uma senha com no mínimo 8 caracteres</span>
+                </div>
+                <div>
+                    <label for="confirmar-senha"></label>
+                    <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Repita sua senha">
+                    <span>Senhas devem ser compatíveis</span>
+                </div>
+                <div>
+                    <label for="sobre"></label>
+                    <textarea id="sobre" name="sobre" rows="4" cols="50" placeholder="Fale um pouco sobre você..."></textarea>
+                </div>
+            </div>
+
+            <div class="bolinha">
+                <p>Sexo</p>
+                <div>
+                    <input type="radio" id="masculino" name="sexo" value="masculino">
+                    <label for="masculino">Masculino</label>
+                </div>
+                <div>
+                    <input type="radio" id="feminino" name="sexo" value="feminino">
+                    <label for="feminino">Feminino</label>
+                </div>
+                <div>
+                    <input type="radio" id="outro" name="sexo" value="outro">
+                    <label for="outro">Outro</label>
+                </div>
+            </div>
+
+            <div class="caixinha">
+                <p>Quais são as suas experiências?</p>
+                <div>
+                    <input type="checkbox" id="html" name="experiencia" value="html">
+                    <label for="html">HTML</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="css" name="experiencia" value="css">
+                    <label for="css">CSS</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="javascript" name="experiencia" value="javascript">
+                    <label for="javascript">JavaScript</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="php" name="experiencia" value="php">
+                    <label for="php">PHP</label>
+                </div>
+            </div>
+
+            <div class="botao">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

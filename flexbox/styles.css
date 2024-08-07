@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul.menu {
+    flex-grow: 1;
+}
+
+nav ul.auth {
+    margin-left: auto;
+    gap: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul.menu :hover,
+nav ul.auth :hover {
+    color: #aaa;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.taylor-swift {
+    background-color: #ff9999;
+}
+
+.tangled {
+    background-color: #d3a4ff;
+}
+
+.loki-series {
+    background-color: #9999ff;
+    flex-direction: column;
+    text-align: left;
+}
+
+.loki-series .image {
+    margin: 0 auto;
+}
+
+.outros {
+    background-color: #aaff80;
+    border: 30px solid #ec2a5b;
+    flex-direction: column;
+}
+
+.outros .images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.image {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
