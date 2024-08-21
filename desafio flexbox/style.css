@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+}
+
+.navbar > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar > div:last-child {
+    justify-content: flex-end;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.navbar div:last-child a {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.navbar div:last-child a:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.5s ease-out;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: white;
+}
+
+.titulo {
+    text-align: center;
+    padding: 10px;
+    background-color: #808080;
+}
+
+.titulo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.article {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.left-side {
+    flex: 1;
+    padding: 20px;
+    background-color: red;
+    color: black;
+    margin-right: -1px;
+}
+
+.right-side {
+    flex: 1;
+    padding: 20px;
+    background-color: green;
+    color: black;
+    margin-left: -1px;
+}
+
+.left-side h1, .right-side h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.full-text {
+    background-color: purple;
+    padding: 20px;
+    color: black;
+    margin-top: -1px;
+}
+
+.full-text h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    margin-top: 40px;
+}
