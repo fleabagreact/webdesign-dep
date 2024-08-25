@@ -44,13 +44,7 @@ header nav ul {
     justify-content: center;
     gap: 15px;
     list-style-type: none;
-}
-
-header nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    list-style-type: none;
+    padding: 0;
 }
 
 header nav ul li {
@@ -73,6 +67,12 @@ header nav ul li a {
     margin-right: 20px;
 }
 
+.postagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
 .sidebar {
     flex: 1;
     background-color: #ddd;
@@ -80,6 +80,19 @@ header nav ul li a {
     border-radius: 5px;
 }
 
+.widget {
+    padding: 10px;
+}
+
+.widget img {
+    width: 100%;
+    height: auto;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 5px; 
+}
+
+/* Estilo do rodapé */
 footer {
     background-color: #333;
     color: white;
@@ -90,10 +103,11 @@ footer {
     margin-top: auto;
 }
 
-a {
+footer a {
     color: white;
     text-decoration: none;
 }
+
 
 @media (max-width: 992px) {
     .content {
@@ -109,8 +123,18 @@ a {
     }
 }
 
+@media (max-width: 768px) {
+    .widget img {
+        max-height: 120px;
+    }
+}
+
 @media (max-width: 576px) {
     header nav ul {
         flex-direction: column;
+    }
+
+    .widget img {
+        max-height: 100px;
     }
 }
