@@ -25,7 +25,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #6e5ff0;
     color: white;
     padding: 20px;
     text-align: center;
@@ -92,9 +92,8 @@ header nav ul li a {
     border-radius: 5px; 
 }
 
-/* Estilo do rodapé */
 footer {
-    background-color: #333;
+    background-color: #6e5ff0;
     color: white;
     text-align: center;
     padding: 10px;
