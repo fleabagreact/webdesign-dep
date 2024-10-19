@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IM Fell DW Pica', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe0e0;
+}
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-style: italic;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffe0e0;
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: white;
+    overflow-x: auto;
+}
+
+.carousel div {
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+.carousel img {
+    width: 220px;
+    height: 220px;
+    transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+    transform: scale(1.1);
+}
+
+.carousel h3 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.carousel h4 {
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+.carousel h5 {
+    margin-top: 5px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.where-find-us {
+    background-color: #e0bdbd;
+    padding: 50px;
+    text-align: center;
+}
+
+.where-find-us h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    width: 100%;
+    height: 500px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.team-section {
+    background-color: #f8f8f8;
+    padding: 50px;
+    text-align: center;
+}
+
+.team-member {
+    margin: 20px;
+    display: inline-block;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.team-member img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #ff6f61;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .info-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .carousel div {
+        margin-bottom: 20px;
+    }
+}
